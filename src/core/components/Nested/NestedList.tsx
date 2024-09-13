@@ -54,7 +54,7 @@ const NestedList: FC<INestedListProps> = ({
 
             <Collapse in={isOpenItemInProgress} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
-                    <ListItemButton sx={{ pl: 4 }}>
+                    <ListItemButton sx={{ pl: 4 }} color='blue'>
                         <ListItemIcon>
                             <SourceOutlinedIcon />
                         </ListItemIcon>
@@ -84,9 +84,13 @@ const NestedList: FC<INestedListProps> = ({
                 <List component="div" disablePadding>
                     <ListItemButton sx={{ pl: 4 }}>
                         <ListItemIcon>
-                            <CreateNewFolderOutlinedIcon />
+                            <CreateNewFolderOutlinedIcon color='secondary' />
                         </ListItemIcon>
-                        <ListItemText primary="Создать папку" />
+                        <ListItemText
+                            primary="Создать папку"
+                            primaryTypographyProps={{
+                                color: 'primary',
+                            }} />
                     </ListItemButton>
                 </List>
             </Collapse>
