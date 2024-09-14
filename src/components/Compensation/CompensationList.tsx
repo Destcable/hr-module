@@ -1,9 +1,9 @@
 import { List } from "react-admin";
-import { CompensationListFilterSidebar } from "./CompensationListFilterSidebar";
+import { CompensationListSidebar } from "./CompensationListSidebar";
 
 const CompensationList = () => {
     return (
-        <List aside={<CompensationListFilterSidebar />}>
+        <List aside={<CompensationListSidebar />}>
             <span>123</span>
         </List>
     )
