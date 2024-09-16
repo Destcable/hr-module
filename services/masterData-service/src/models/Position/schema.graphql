@@ -1,0 +1,19 @@
+type Position {
+    id:             ID
+    name:           String!
+    count:          Int
+}
+
+type ListMetadata { 
+    count: Int!
+}
+
+type Query {
+    allPositions: [Position]
+    _allPositionsMeta: ListMetadata
+}
+
+type Mutation { 
+    createPosition(name: String): Position
+    deletePosition(id: ID!): Position
+}
